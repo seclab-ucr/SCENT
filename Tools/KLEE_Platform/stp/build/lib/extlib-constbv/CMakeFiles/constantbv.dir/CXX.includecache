@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/stp/Util/Attributes.h
+stp/config.h
+../include/stp/Util/stp/config.h
+
+/home/yue/Work/stp/lib/extlib-constbv/constantbv.cpp
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+string.h
+-
+ctype.h
+-
+cassert
+-
+constantbv.h
+/home/yue/Work/stp/lib/extlib-constbv/constantbv.h
+stp/Util/Attributes.h
+/home/yue/Work/stp/lib/extlib-constbv/stp/Util/Attributes.h
+
+/home/yue/Work/stp/lib/extlib-constbv/constantbv.h
+stdlib.h
+-
+limits.h
+-
+string.h
+-
+ctype.h
+-
+
+include/stp/config.h
+

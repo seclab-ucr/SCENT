@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/stp/Sat/MinisatCore.h
+SATSolver.h
+../include/stp/Sat/SATSolver.h
+
+../include/stp/Sat/SATSolver.h
+minisat/core/SolverTypes.h
+../include/stp/Sat/minisat/core/SolverTypes.h
+minisat/mtl/Vec.h
+../include/stp/Sat/minisat/mtl/Vec.h
+iostream
+-
+
+../include/stp/Sat/SimplifyingMinisat.h
+SATSolver.h
+../include/stp/Sat/SATSolver.h
+
+/home/yue/Work/stp/lib/Sat/MinisatCore.cpp
+stp/Sat/MinisatCore.h
+/home/yue/Work/stp/lib/Sat/stp/Sat/MinisatCore.h
+minisat/core/Solver.h
+/home/yue/Work/stp/lib/Sat/minisat/core/Solver.h
+
+/home/yue/Work/stp/lib/Sat/SimplifyingMinisat.cpp
+stp/Sat/SimplifyingMinisat.h
+/home/yue/Work/stp/lib/Sat/stp/Sat/SimplifyingMinisat.h
+minisat/simp/SimpSolver.h
+/home/yue/Work/stp/lib/Sat/minisat/simp/SimpSolver.h
+

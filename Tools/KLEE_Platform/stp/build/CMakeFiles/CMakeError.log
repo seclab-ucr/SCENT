@@ -1,0 +1,17 @@
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wheader-guard failed with the following output:
+Change Dir: /home/yue/Work/stp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cba29/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cba29.dir/build.make CMakeFiles/cmTC_cba29.dir/build
+make[1]: Entering directory '/data/home/yue/Work/stp/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cba29.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -DHAVE_FLAG_-Wheader-guard   -Wheader-guard -o CMakeFiles/cmTC_cba29.dir/src.cxx.o -c /home/yue/Work/stp/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wheader-guard'
+CMakeFiles/cmTC_cba29.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cba29.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_cba29.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/data/home/yue/Work/stp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cba29/fast' failed
+make: *** [cmTC_cba29/fast] Error 2
+
+Source file was:
+int main() { return 0; }

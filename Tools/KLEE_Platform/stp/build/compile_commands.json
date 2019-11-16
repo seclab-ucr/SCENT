@@ -1,0 +1,602 @@
+[
+{
+  "directory": "/home/yue/Work/stp/build/lib/Globals",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/stpglobals.dir/Globals.cpp.o -c /home/yue/Work/stp/lib/Globals/Globals.cpp",
+  "file": "/home/yue/Work/stp/lib/Globals/Globals.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/ASTKind.cpp.o -c /home/yue/Work/stp/build/lib/AST/ASTKind.cpp",
+  "file": "/home/yue/Work/stp/build/lib/AST/ASTKind.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/ASTInterior.cpp.o -c /home/yue/Work/stp/lib/AST/ASTInterior.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/ASTInterior.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/ASTNode.cpp.o -c /home/yue/Work/stp/lib/AST/ASTNode.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/ASTNode.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/ASTUtil.cpp.o -c /home/yue/Work/stp/lib/AST/ASTUtil.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/ASTUtil.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/ASTBVConst.cpp.o -c /home/yue/Work/stp/lib/AST/ASTBVConst.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/ASTBVConst.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/ASTmisc.cpp.o -c /home/yue/Work/stp/lib/AST/ASTmisc.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/ASTmisc.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/ASTSymbol.cpp.o -c /home/yue/Work/stp/lib/AST/ASTSymbol.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/ASTSymbol.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/MutableASTNode.cpp.o -c /home/yue/Work/stp/lib/AST/MutableASTNode.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/MutableASTNode.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/NodeFactory/HashingNodeFactory.cpp.o -c /home/yue/Work/stp/lib/AST/NodeFactory/HashingNodeFactory.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/NodeFactory/HashingNodeFactory.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/NodeFactory/NodeFactory.cpp.o -c /home/yue/Work/stp/lib/AST/NodeFactory/NodeFactory.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/NodeFactory/NodeFactory.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/NodeFactory/SimplifyingNodeFactory.cpp.o -c /home/yue/Work/stp/lib/AST/NodeFactory/SimplifyingNodeFactory.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/NodeFactory/SimplifyingNodeFactory.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AST",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/AST.dir/NodeFactory/TypeChecker.cpp.o -c /home/yue/Work/stp/lib/AST/NodeFactory/TypeChecker.cpp",
+  "file": "/home/yue/Work/stp/lib/AST/NodeFactory/TypeChecker.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AbsRefineCounterExample",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/abstractionrefinement.dir/AbstractionRefinement.cpp.o -c /home/yue/Work/stp/lib/AbsRefineCounterExample/AbstractionRefinement.cpp",
+  "file": "/home/yue/Work/stp/lib/AbsRefineCounterExample/AbstractionRefinement.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AbsRefineCounterExample",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/abstractionrefinement.dir/CounterExample.cpp.o -c /home/yue/Work/stp/lib/AbsRefineCounterExample/CounterExample.cpp",
+  "file": "/home/yue/Work/stp/lib/AbsRefineCounterExample/CounterExample.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/AbsRefineCounterExample",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/abstractionrefinement.dir/ArrayTransformer.cpp.o -c /home/yue/Work/stp/lib/AbsRefineCounterExample/ArrayTransformer.cpp",
+  "file": "/home/yue/Work/stp/lib/AbsRefineCounterExample/ArrayTransformer.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/BVSolver.cpp.o -c /home/yue/Work/stp/lib/Simplifier/BVSolver.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/BVSolver.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/consteval.cpp.o -c /home/yue/Work/stp/lib/Simplifier/consteval.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/consteval.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/PropagateEqualities.cpp.o -c /home/yue/Work/stp/lib/Simplifier/PropagateEqualities.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/PropagateEqualities.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/RemoveUnconstrained.cpp.o -c /home/yue/Work/stp/lib/Simplifier/RemoveUnconstrained.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/RemoveUnconstrained.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/Simplifier.cpp.o -c /home/yue/Work/stp/lib/Simplifier/Simplifier.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/Simplifier.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/SubstitutionMap.cpp.o -c /home/yue/Work/stp/lib/Simplifier/SubstitutionMap.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/SubstitutionMap.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/VariablesInExpression.cpp.o -c /home/yue/Work/stp/lib/Simplifier/VariablesInExpression.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/VariablesInExpression.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/DifficultyScore.cpp.o -c /home/yue/Work/stp/lib/Simplifier/DifficultyScore.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/DifficultyScore.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/UseITEContext.cpp.o -c /home/yue/Work/stp/lib/Simplifier/UseITEContext.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/UseITEContext.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/FindPureLiterals.cpp.o -c /home/yue/Work/stp/lib/Simplifier/FindPureLiterals.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/FindPureLiterals.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/AIGSimplifyPropositionalCore.cpp.o -c /home/yue/Work/stp/lib/Simplifier/AIGSimplifyPropositionalCore.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/AIGSimplifyPropositionalCore.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_Arithmetic.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Arithmetic.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Arithmetic.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_Boolean.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Boolean.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Boolean.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_Comparison.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Comparison.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Comparison.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_Division.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Division.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Division.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_MaxPrecision.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_MaxPrecision.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_MaxPrecision.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_Multiplication.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Multiplication.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Multiplication.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitPropagation.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitPropagation.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitPropagation.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_Shifting.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Shifting.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Shifting.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_TransferFunctions.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_TransferFunctions.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_TransferFunctions.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/ConstantBitP_Utility.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Utility.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/ConstantBitP_Utility.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Simplifier",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/simplifier.dir/constantBitP/FixedBits.cpp.o -c /home/yue/Work/stp/lib/Simplifier/constantBitP/FixedBits.cpp",
+  "file": "/home/yue/Work/stp/lib/Simplifier/constantBitP/FixedBits.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/AssortedPrinters.cpp.o -c /home/yue/Work/stp/lib/Printer/AssortedPrinters.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/AssortedPrinters.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/BenchPrinter.cpp.o -c /home/yue/Work/stp/lib/Printer/BenchPrinter.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/BenchPrinter.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/CPrinter.cpp.o -c /home/yue/Work/stp/lib/Printer/CPrinter.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/CPrinter.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/dotPrinter.cpp.o -c /home/yue/Work/stp/lib/Printer/dotPrinter.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/dotPrinter.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/GDLPrinter.cpp.o -c /home/yue/Work/stp/lib/Printer/GDLPrinter.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/GDLPrinter.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/LispPrinter.cpp.o -c /home/yue/Work/stp/lib/Printer/LispPrinter.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/LispPrinter.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/PLPrinter.cpp.o -c /home/yue/Work/stp/lib/Printer/PLPrinter.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/PLPrinter.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/SMTLIB1Printer.cpp.o -c /home/yue/Work/stp/lib/Printer/SMTLIB1Printer.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/SMTLIB1Printer.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/SMTLIB2Printer.cpp.o -c /home/yue/Work/stp/lib/Printer/SMTLIB2Printer.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/SMTLIB2Printer.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Printer",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/src/AST -I/home/yue/Work/stp/build/src/AST   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/printer.dir/SMTLIBPrinter.cpp.o -c /home/yue/Work/stp/lib/Printer/SMTLIBPrinter.cpp",
+  "file": "/home/yue/Work/stp/lib/Printer/SMTLIBPrinter.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Parser",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/parser.dir/LetMgr.cpp.o -c /home/yue/Work/stp/lib/Parser/LetMgr.cpp",
+  "file": "/home/yue/Work/stp/lib/Parser/LetMgr.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Parser",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/parser.dir/lexcvc.cpp.o -c /home/yue/Work/stp/build/lib/Parser/lexcvc.cpp",
+  "file": "/home/yue/Work/stp/build/lib/Parser/lexcvc.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Parser",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/parser.dir/parsecvc.tab.cpp.o -c /home/yue/Work/stp/build/lib/Parser/parsecvc.tab.cpp",
+  "file": "/home/yue/Work/stp/build/lib/Parser/parsecvc.tab.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Parser",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/parser.dir/lexsmt2.cpp.o -c /home/yue/Work/stp/build/lib/Parser/lexsmt2.cpp",
+  "file": "/home/yue/Work/stp/build/lib/Parser/lexsmt2.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Parser",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/parser.dir/parsesmt2.tab.cpp.o -c /home/yue/Work/stp/build/lib/Parser/parsesmt2.tab.cpp",
+  "file": "/home/yue/Work/stp/build/lib/Parser/parsesmt2.tab.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Parser",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/parser.dir/lexsmt.cpp.o -c /home/yue/Work/stp/build/lib/Parser/lexsmt.cpp",
+  "file": "/home/yue/Work/stp/build/lib/Parser/lexsmt.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Parser",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/parser.dir/parsesmt.tab.cpp.o -c /home/yue/Work/stp/build/lib/Parser/parsesmt.tab.cpp",
+  "file": "/home/yue/Work/stp/build/lib/Parser/parsesmt.tab.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Interface",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/cppinterface.dir/cpp_interface.cpp.o -c /home/yue/Work/stp/lib/Interface/cpp_interface.cpp",
+  "file": "/home/yue/Work/stp/lib/Interface/cpp_interface.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Interface",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/cinterface.dir/c_interface.cpp.o -c /home/yue/Work/stp/lib/Interface/c_interface.cpp",
+  "file": "/home/yue/Work/stp/lib/Interface/c_interface.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigCheck.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigCheck.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigCheck.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigDfs.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigDfs.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigDfs.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigFanout.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigFanout.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigFanout.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigMan.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigMan.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigMan.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigMem.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigMem.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigMem.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigMffc.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigMffc.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigMffc.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigObj.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigObj.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigObj.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigOper.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigOper.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigOper.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigOrder.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigOrder.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigOrder.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigPart.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigPart.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigPart.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigRepr.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigRepr.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigRepr.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigRet.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigRet.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigRet.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigScl.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigScl.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigScl.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigSeq.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigSeq.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigSeq.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigShow.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigShow.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigShow.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigTable.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTable.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTable.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigTime.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTime.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTime.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigTiming.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTiming.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTiming.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigTruth.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTruth.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTruth.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigTsim.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTsim.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigTsim.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigUtil.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigUtil.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigUtil.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/aig/aigWin.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/aig/aigWin.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/aig/aigWin.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfCore.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfCore.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfCore.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfCut.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfCut.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfCut.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfData.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfData.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfData.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfMan.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfMan.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfMan.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfMap.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfMap.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfMap.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfPost.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfPost.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfPost.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfUtil.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfUtil.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfUtil.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/cnf/cnfWrite.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfWrite.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/cnf/cnfWrite.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darBalance.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darBalance.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darBalance.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darCore.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darCore.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darCore.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darCut.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darCut.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darCut.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darData.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darData.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darData.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darLib.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darLib.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darLib.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darMan.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darMan.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darMan.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darPrec.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darPrec.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darPrec.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darRefact.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darRefact.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darRefact.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/dar/darScript.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/dar/darScript.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/dar/darScript.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/kit/kitAig.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/kit/kitAig.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/kit/kitAig.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/kit/kitGraph.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/kit/kitGraph.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/kit/kitGraph.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/kit/kitIsop.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/kit/kitIsop.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/kit/kitIsop.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/kit/kitSop.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/kit/kitSop.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/kit/kitSop.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-abc",
+  "command": "/usr/bin/cc  -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib -I/home/yue/Work/stp/lib/extlib-abc   -fPIC -O2 -g    -D STP_EXPORTS -std=gnu99 -o CMakeFiles/abc.dir/aig/kit/kitTruth.c.o   -c /home/yue/Work/stp/lib/extlib-abc/aig/kit/kitTruth.c",
+  "file": "/home/yue/Work/stp/lib/extlib-abc/aig/kit/kitTruth.c"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/extlib-constbv",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/constantbv.dir/constantbv.cpp.o -c /home/yue/Work/stp/lib/extlib-constbv/constantbv.cpp",
+  "file": "/home/yue/Work/stp/lib/extlib-constbv/constantbv.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/STPManager",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/stpmgr.dir/STP.cpp.o -c /home/yue/Work/stp/lib/STPManager/STP.cpp",
+  "file": "/home/yue/Work/stp/lib/STPManager/STP.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/STPManager",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/stpmgr.dir/STPManager.cpp.o -c /home/yue/Work/stp/lib/STPManager/STPManager.cpp",
+  "file": "/home/yue/Work/stp/lib/STPManager/STPManager.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/BitBlaster.cpp.o -c /home/yue/Work/stp/lib/ToSat/BitBlaster.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/BitBlaster.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/ToSATBase.cpp.o -c /home/yue/Work/stp/lib/ToSat/ToSATBase.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/ToSATBase.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/AIG/BBNodeManagerAIG.cpp.o -c /home/yue/Work/stp/lib/ToSat/AIG/BBNodeManagerAIG.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/AIG/BBNodeManagerAIG.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/AIG/ToCNFAIG.cpp.o -c /home/yue/Work/stp/lib/ToSat/AIG/ToCNFAIG.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/AIG/ToCNFAIG.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/AIG/ToSATAIG.cpp.o -c /home/yue/Work/stp/lib/ToSat/AIG/ToSATAIG.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/AIG/ToSATAIG.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/ASTNode/ClauseList.cpp.o -c /home/yue/Work/stp/lib/ToSat/ASTNode/ClauseList.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/ASTNode/ClauseList.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/ASTNode/ASTtoCNF.cpp.o -c /home/yue/Work/stp/lib/ToSat/ASTNode/ASTtoCNF.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/ASTNode/ASTtoCNF.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/ToSat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/tosat.dir/ASTNode/ToSAT.cpp.o -c /home/yue/Work/stp/lib/ToSat/ASTNode/ToSAT.cpp",
+  "file": "/home/yue/Work/stp/lib/ToSat/ASTNode/ToSAT.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Sat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/sat.dir/MinisatCore.cpp.o -c /home/yue/Work/stp/lib/Sat/MinisatCore.cpp",
+  "file": "/home/yue/Work/stp/lib/Sat/MinisatCore.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Sat",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/sat.dir/SimplifyingMinisat.cpp.o -c /home/yue/Work/stp/lib/Sat/SimplifyingMinisat.cpp",
+  "file": "/home/yue/Work/stp/lib/Sat/SimplifyingMinisat.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Util",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/util.dir/GitSHA1.cpp.o -c /home/yue/Work/stp/build/lib/Util/GitSHA1.cpp",
+  "file": "/home/yue/Work/stp/build/lib/Util/GitSHA1.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/lib/Util",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -D STP_EXPORTS -std=gnu++11 -o CMakeFiles/util.dir/RunTimes.cpp.o -c /home/yue/Work/stp/lib/Util/RunTimes.cpp",
+  "file": "/home/yue/Work/stp/lib/Util/RunTimes.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/tools/stp",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -std=gnu++11 -o CMakeFiles/stp.dir/main.cpp.o -c /home/yue/Work/stp/tools/stp/main.cpp",
+  "file": "/home/yue/Work/stp/tools/stp/main.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/tools/stp",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -std=gnu++11 -o CMakeFiles/stp.dir/main_common.cpp.o -c /home/yue/Work/stp/tools/stp/main_common.cpp",
+  "file": "/home/yue/Work/stp/tools/stp/main_common.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/tools/stp_simple",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -std=gnu++11 -o CMakeFiles/stp_simple.dir/main_simple.cpp.o -c /home/yue/Work/stp/tools/stp_simple/main_simple.cpp",
+  "file": "/home/yue/Work/stp/tools/stp_simple/main_simple.cpp"
+},
+{
+  "directory": "/home/yue/Work/stp/build/tools/stp_simple",
+  "command": "/usr/bin/c++   -D__STDC_LIMIT_MACROS -I/home/yue/Work/stp/include -I/home/yue/Work/stp/build/include -I/home/yue/Work/stp/lib   -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -O2 -g    -std=gnu++11 -o CMakeFiles/stp_simple.dir/__/stp/main_common.cpp.o -c /home/yue/Work/stp/tools/stp/main_common.cpp",
+  "file": "/home/yue/Work/stp/tools/stp/main_common.cpp"
+}
+]
