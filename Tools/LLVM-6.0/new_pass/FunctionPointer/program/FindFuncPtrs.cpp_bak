@@ -1,0 +1,166 @@
+
+#include "llvm/Pass.h"
+#include "llvm/Analysis/CallGraph.h"
+#include "llvm/IR/CallSite.h"
+//#include "llvm/IR/DebugLoc.h"
+#include "llvm/IR/DebugInfoMetadata.h"
+#include "llvm/IR/Function.h"
+#include "llvm/IR/InstIterator.h"
+#include "llvm/Support/raw_ostream.h"
+
+using namespace llvm;
+
+namespace {
+
+struct FuncCallGraph : public FunctionPass {
+    static char ID;
+    FuncCallGraph() : FunctionPass(ID) {}
+
+    void traverse(CallGraphNode *node) {
+        for (CallGraphNode::iterator I = node->begin(), E = node->end(); I != E; ++I) {
+            if (I->first) {
+                CallSite CS(I->first);
+                errs() << CS.getInstruction() << "\n";
+                if (CS.isIndirectCall()) {
+                    errs() << *CS.getInstruction() << "\n";
+                    //errs() << I->second->getFunction() << "\n";
+                    //I->second->dump();
+                }
+            }
+        }
+    }
+
+    bool runOnFunction(Function &F) override {
+        if (F.getName() == "tcp_v4_rcv") {
+            CallGraph &CG = getAnalysis<CallGraphWrapperPass>().getCallGraph();
+            CallGraphNode *node = CG[&F];
+            errs() << node->getFunction() << "\n";
+            node->dump();
+            traverse(node);
+        }
+
+        return false;
+    }
+
+    void getAnalysisUsage(AnalysisUsage &AU) const override {
+        AU.setPreservesAll();
+        AU.addRequired<CallGraphWrapperPass>();
+    }
+}; // end of struct FuncCallGraph
+
+struct FindFuncPtrs : public FunctionPass {
+    static char ID;
+    FindFuncPtrs() : FunctionPass(ID) {}
+
+    SmallPtrSet<Function*, 32> VisitedFuncs;
+
+    void printDebugInfo(Instruction *I) {
+        errs() << *I << '\n';
+        if (DILocation *Loc = I->getDebugLoc()) { 
+            StringRef File = Loc->getFilename();
+            unsigned Line = Loc->getLine();
+            errs() << "File: " << File << '\n';
+            errs() << "Line: " << Line << '\n';
+        } else {
+            errs() << "No debug info.\n";
+        }
+    }
+
+    void traverse(CallGraphNode *node) {
+        errs() << "Visiting function '" << node->getFunction()->getName() << "'\n";
+        VisitedFuncs.insert(node->getFunction());
+        //node->dump();
+
+        for (CallGraphNode::iterator I = node->begin(), E = node->end(); I != E; ++I) {
+            if (I->first) {
+                CallSite CS(I->first);
+                //errs() << *CS.getInstruction() << "\n";
+                if (CS.isIndirectCall()) {
+                    Value *V = CS.getCalledValue();
+                    if (V->getName() == "getfrag") // exclude getfrag function, which is an low-level IP function
+                        continue;
+
+                    LoadInst *LI = cast<LoadInst>(V);
+
+                    if (GetElementPtrInst *GEPI = dyn_cast<GetElementPtrInst>(LI->getPointerOperand())) {
+                        StringRef structName = GEPI->getSourceElementType()->getStructName();
+                        if (structName == "struct.tcp_congestion_ops")  // exclude congestion control ops
+                            continue;
+                        if (structName == "struct.dst_ops")   // exclude dst_entry ops
+                            continue;
+                        if (structName == "struct.ahash_request")
+                            continue;
+                    } else if (BitCastInst *BCI = dyn_cast<BitCastInst>(LI->getPointerOperand())) {
+                        Type *ST = BCI->getSrcTy();
+                        while (ST->isPointerTy()) {
+                            ST = ST->getPointerElementType();
+                        }
+                        if (ST->isStructTy()) {
+                            StringRef structName = ST->getStructName();
+                            if (structName == "struct.crypto_alg")
+                                continue;
+                        }
+                    }
+                    StringRef name = LI->getPointerOperand()->getName().split('.').first;
+                    if (name == "sk_state_change" || name == "sk_error_report" || name == "sk_data_ready" || name == "sk_write_space")  // exclude low-level TCP functions
+                        continue;
+                    if (name == "sk_state_change185") 
+                        continue;
+                    if (name == "md5_lookup" || name == "calc_md5_hash")    // exclude md5 functions
+                        continue;
+                    if (name == "req_md5_lookup")   // exclude md5 functions in another struct
+                        continue;
+                    if (name == "twsk_destructor")
+                        continue;
+                    if (name == "destructor")
+                        continue;
+                    
+                    LI->dump();
+                    errs() << name << "\n";
+                    printDebugInfo(CS.getInstruction());
+                } else {
+                    if (Function *F = I->second->getFunction()) {
+                        if (VisitedFuncs.find(F) != VisitedFuncs.end())
+                            // already visited
+                            continue;
+    
+                        traverse(I->second);
+                    }
+                }
+            }
+        }
+    }
+
+    bool runOnFunction(Function &F) override {
+        if (F.getName() == "tcp_v4_rcv") {
+            errs() << "FindFuncPtrs: ";
+            errs().write_escaped(F.getName()) << '\n';
+
+            CallGraph &CG = getAnalysis<CallGraphWrapperPass>().getCallGraph();
+            CallGraphNode *node = CG[&F];
+            //node->dump();
+
+            traverse(node);
+        }
+
+        return false;
+    }
+
+    void getAnalysisUsage(AnalysisUsage &AU) const override {
+        AU.setPreservesAll();
+        AU.addRequired<CallGraphWrapperPass>();
+    }
+}; // end of struct FindFuncPtrs
+
+} // end of anonymous namespace
+
+char FuncCallGraph::ID = 0;
+static RegisterPass<FuncCallGraph> X("func-callgraph", "View Call Graph of a function",
+                                    false /* Only looks at CFG */,
+                                    false /* Analysis Pass */);
+
+char FindFuncPtrs::ID = 0;
+static RegisterPass<FindFuncPtrs> Y("find-func-ptrs", "Find function pointers",
+                                    false /* Only looks at CFG */,
+                                    false /* Analysis Pass */);
+

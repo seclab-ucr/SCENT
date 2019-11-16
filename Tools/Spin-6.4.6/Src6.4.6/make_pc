@@ -1,0 +1,21 @@
+#!/bin/sh
+# SPIN - Verification Software - Version 6.4 - January 2016
+#
+# This file is part of the public release of Spin. It is subject to the
+# terms in the LICENSE file that is included in this source directory.
+# Tool documentation is available at http://spinroot.com
+#
+# This script is for compiling Spin on a PC with a Unix command shell
+# It requires cygwin to be installed on your system, with support for:
+#	gcc, sh, yacc, echo, mv, and rm
+# See also makefile for compiling Spin on a standard Unix/Linux system.
+
+yacc -v -d spin.y
+gcc -O2 -DPC -DNXT -Wall -ansi -o spin.exe *.c
+
+rm -f *.o *.obj y?tab.? y.output
+
+# installation:
+
+echo "mv spin.exe /usr/bin"
+mv spin.exe /usr/bin

@@ -1,0 +1,142 @@
+export C_INCLUDE_PATH=.:~/Work/Linux_kernel/Replace/Target_Model/LLVM_Version/Linux_Source_Code/abstracted_source_code/Linux_3WHS/
+LLVM=/data/home/yue/Work/LLVM-6.0/build/bin
+CC=$(LLVM)/clang
+OPT=$(LLVM)/opt
+SCENT_PATH=~/Work/SCENT
+CODE_PATH=${SCENT_PATH}/TCP_Models/Linux_4.8
+DIR=${CODE_PATH}/
+DEPS=${DIR}TCP_Model.h ${DIR}Model0_tcp_input_defconfig.h ${DIR}Define.h TCP_Model.pch ${DIR}Model1_tcp_input_defconfig.h ${DIR}Model0_tcp_input.c ${DIR}Model1_tcp_input.c
+CFLAGS= -c -emit-llvm -g -no-integrated-as -adce -O2 -include ${DIR}TCP_Model.h -include-pch TCP_Model.pch
+
+#target.o: TCP_Core4.o pan.o $(DEPS)
+#	clang -o target TCP_Core4.o pan.o
+#TCP_Core4.o: TCP_Core_v4.bc $(DEPS)
+#	llc -filetype=obj -O0 -relocation-model=pic TCP_Core_v4.bc -o TCP_Core4.o
+
+target.o: TCP_Core_v4.bc pan.o klee_main.bc KLEE_Seed_Generation.o Model0_Init.bc Model1_Init.bc TCP_Model.pch ${DEPS}
+
+TCP_Core_v4.bc: TCP_Core_v3.bc ${DEPS}
+	$(OPT) -load myInstrumentationLib.so -myInstrumentation TCP_Core_v3.bc 1> TCP_Core_v4.bc 2> bb2line_v4.txt
+
+#target.o: TCP_Core3.o pan.o $(DEPS)
+#	clang -o target TCP_Core3.o pan.o
+#TCP_Core3.o: TCP_Core_v3.bc $(DEPS)
+#	llc -filetype=obj -O0 -relocation-model=pic TCP_Core_v3.bc -o TCP_Core3.o
+
+TCP_Core_v3.bc: TCP_Core_v2.bc ${DEPS}
+	$(OPT) -load myCoverageLib.so -myCoverage TCP_Core_v2.bc 1> TCP_Core_v3.bc 2> bb2line_v2.txt
+
+TCP_Core_v2.bc: TCP_Core.bc ${DEPS}
+	$(OPT) -lowerswitch TCP_Core.bc 1> TCP_Core_v2.bc
+
+#TCP_Core.o: TCP_Core.bc $(DEPS)
+#	llc -filetype=obj -O0 -relocation-model=pic TCP_Core.bc
+
+TCP_Core.bc: Init.bc Model0_TCP_Core.bc Model1_TCP_Core.bc $(DEPS)#Model0_Init.bc Model1_Init.bc  #Main.bc 
+	$(LLVM)/llvm-link -o TCP_Core.bc Init.bc Model0_TCP_Core.bc Model1_TCP_Core.bc #Model0_Init.bc Model1_Init.bc #Main.bc Model1_Init.bc
+
+TCP_Model.pch: ${DIR}TCP_Model.h ${DIR}Define.h ${DIR}Model0_tcp_input_defconfig.h ${DIR}Model1_tcp_input_defconfig.h
+	$(CC) -c -g -no-integrated-as -adce -O2 -o TCP_Model.pch ${DIR}TCP_Model.h
+
+Main.bc: ${DIR}main.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}main.c -o Main.bc
+
+Init.bc: Initialization.bc Initialization0.bc $(DEPS) #Packet_Address.bc
+	$(LLVM)/llvm-link -o Init.bc Initialization.bc Initialization0.bc #Packet_Address.bc
+
+Model0_Init.bc:  Model0_global.bc Model0_Listen_Server_Initialize.bc Model0_SKB_Initialize.bc $(DEPS) #Model0_Server_A_Initialize.bc Model0_Server_Initialize.bc 
+	$(LLVM)/llvm-link -o Model0_Init.bc Model0_global.bc Model0_Listen_Server_Initialize.bc Model0_SKB_Initialize.bc #Model0_Server_A_Initialize.bc Model0_Server_Initialize.bc 
+
+Model1_Init.bc:  Model1_global.bc Model1_Listen_Server_Initialize.bc Model1_SKB_Initialize.bc $(DEPS) #Model1_Server_A_Initialize.bc Model1_Server_Initialize.bc 
+	$(LLVM)/llvm-link -o Model1_Init.bc Model1_global.bc Model1_Listen_Server_Initialize.bc Model1_SKB_Initialize.bc #Model1_Server_A_Initialize.bc Model1_Server_Initialize.bc 
+
+Model0_TCP_Core.bc: Model0_bytes_order.bc Model0_tcp_input.bc $(DEPS) #Model0_extern.bc Model0_tcp_ipv4.bc
+	$(LLVM)/llvm-link -o Model0_TCP_Core.bc Model0_bytes_order.bc Model0_tcp_input.bc #Model0_extern.bc Model0_tcp_ipv4.bc
+
+Model1_TCP_Core.bc: Model1_bytes_order.bc Model1_tcp_input.bc $(DEPS) #Model1_extern.bc Model1_tcp_ipv4.bc
+	$(LLVM)/llvm-link -o Model1_TCP_Core.bc Model1_bytes_order.bc Model1_tcp_input.bc #Model1_extern.bc Model1_tcp_ipv4.bc
+
+# Initialization
+Initialization0.bc: ${DIR}Initialization0.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Initialization0.c
+	#Model0
+Model0_global.bc: ${DIR}Model0_global2.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model0_global2.c -o Model0_global.bc
+Model0_Listen_Server_Initialize.bc: ${DIR}Model0_Listen_Server_Initialize5.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model0_Listen_Server_Initialize5.c -o Model0_Listen_Server_Initialize.bc 
+Model0_SKB_Initialize.bc: ${DIR}Model0_SKB_Initialize_3WHS.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model0_SKB_Initialize_3WHS.c -o Model0_SKB_Initialize.bc
+	#Model1
+Model1_global.bc: ${DIR}Model1_global2.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model1_global2.c -o Model1_global.bc
+Model1_Listen_Server_Initialize.bc: ${DIR}Model1_Listen_Server_Initialize5.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model1_Listen_Server_Initialize5.c -o Model1_Listen_Server_Initialize.bc
+Model1_SKB_Initialize.bc: ${DIR}Model1_SKB_Initialize_3WHS.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model1_SKB_Initialize_3WHS.c -o Model1_SKB_Initialize.bc
+
+#Model0_Server_A_Initialize.bc: ${DIR}Model0_Server_A_Initialize.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model0_Server_A_Initialize.c -o Model0_Server_A_Initialize.bc
+#Model1_Server_A_Initialize.bc: ${DIR}Model1_Server_A_Initialize.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model1_Server_A_Initialize.c -o Model1_Server_A_Initialize.bc
+#Model0_Server_Initialize.bc: ${DIR}Model0_Server_Initialize.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model0_Server_Initialize.c -o Model0_Server_Initialize.bc
+#Model1_Server_Initialize.bc: ${DIR}Model1_Server_Initialize.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model1_Server_Initialize.c -o Model1_Server_Initialize.bc
+
+#Model0_Address.bc: Model0_Address.c $(DEPS)
+#	clang $(CFLAGS) Model0_Address.c
+#Packet_Address.bc: Packet_Address.c $(DEPS)
+#	clang $(CFLAGS) Packet_Address.c
+#Model0_Client_Initialize.bc: ${DIR}Model0_Client_Initialize.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model0_Client_Initialize.c
+
+# TCP Core functions
+Initialization.bc: ${DIR}Initialization_3WHS_ack.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Initialization_3WHS_ack.c -o Initialization.bc
+	#Model0
+Model0_bytes_order.bc: ${DIR}Model0_bytes_order.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model0_bytes_order.c
+Model0_tcp_input.bc: ${DIR}Model0_tcp_input.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model0_tcp_input.c
+#Model0_tcp_ipv4.bc: ${DIR}Model0_tcp_ipv4.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model0_tcp_ipv4.c
+#Model0_extern.bc: ${DIR}Model0_extern.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model0_extern.c
+	#Model1
+Model1_bytes_order.bc: ${DIR}Model1_bytes_order.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model1_bytes_order.c
+Model1_tcp_input.bc: ${DIR}Model1_tcp_input.c $(DEPS)
+	$(CC) $(CFLAGS) ${DIR}Model1_tcp_input.c
+#Model1_tcp_ipv4.bc: ${DIR}Model1_tcp_ipv4.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model1_tcp_ipv4.c
+#Model1_extern.bc: ${DIR}Model1_extern.c $(DEPS)
+#	clang $(CFLAGS) ${DIR}Model1_extern.c
+
+pan.o: ${DIR}pan.c
+	$(CC) -fPIC -O0 -g -no-integrated-as -adce -DVECTORSZ=180000 -DSAFETY -DNOFAIR -DNOBOUNDCHECK -DNOCOMP -DREACH -c ${DIR}pan.c 
+	#$(CC) -fPIC -O0 -g -no-integrated-as -adce -DVECTORSZ=180000 -DSAFETY -DNOFAIR -DNOBOUNDCHECK -DNOCOMP -DMEMLIM=150000 -DNCORE=5 -DVMAX=3328 -DREACH -c ${DIR}pan.c
+	#$(CC) -fPIC -O0 -g -no-integrated-as -adce -DVECTORSZ=180000 -DSAFETY -DNOFAIR -DNOBOUNDCHECK -DNOCOMP -DREACH -c ${DIR}pan.c 
+	#$(CC) -fPIC -O0 -g -no-integrated-as -adce -DVECTORSZ=80000 -DSAFETY -DNOFAIR -DNOBOUNDCHECK -DNOCOMP -c ${DIR}pan.c 
+	#$(CC) -fPIC -O0 -g -no-integrated-as -adce -DVECTORSZ=80000 -DSAFETY -DNOFAIR -DNOBOUNDCHECK -DNOCOMP -DBITSTATE -c ${DIR}pan.c 
+	#$(CC) -fPIC -O0 -g -no-integrated-as -adce -DVECTORSZ=80000 -DSAFETY -DNOFAIR -DNOBOUNDCHECK -DNOCOMP -DBFS -c ${DIR}pan.c 
+
+klee_main.bc: klee_main.c
+	$(CC) -emit-llvm -g -O0 -no-integrated-as -adce -fPIC -I ${DIR} -I ~/Work/KLEE_Platform/klee/include/ -c klee_main.c  -o klee_main.bc
+
+klee_main.c: klee_main_part1.c klee_main_part2.c
+	cat klee_main_part1.c klee_main_part2.c > klee_main.c
+
+klee_main_part1.c: ${DIR}Model0_global2.c ${DIR}Model0_Listen_Server_Initialize5.c ${DIR}Script/KLEE_Make_Symbolic.py Model0_Listen_Server_Initialize.i
+	python ${DIR}Script/KLEE_Make_Symbolic.py ${DIR}Model0_global2.c Model0_Listen_Server_Initialize.i
+
+Model0_Listen_Server_Initialize.i: ${DIR}Model0_Listen_Server_Initialize5.c
+	$(CC) -E -no-integrated-as -adce -O0 -include ${DIR}TCP_Model.h -include-pch TCP_Model.pch ${DIR}Model0_Listen_Server_Initialize5.c -o Model0_Listen_Server_Initialize.i
+
+klee_main_part2.c: klee_main_part1.c ${DIR}Script/KLEE_Enumeration_Generation.py
+	python ${DIR}Script/KLEE_Enumeration_Generation.py
+
+KLEE_Seed_Generation.o: KLEE_Seed_Generation.c
+	$(CC) -I ${DIR} -O2 -c KLEE_Seed_Generation.c -o KLEE_Seed_Generation.o
+
+KLEE_Seed_Generation.c: klee_main.c
+	python ${DIR}Script/KLEE_Seed_Meta.py

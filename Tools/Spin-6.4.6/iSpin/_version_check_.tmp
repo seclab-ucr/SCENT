@@ -1,0 +1,44 @@
+<html>
+<body>
+<h2><tt>Spin Sources</tt></h2>
+<hr color=blue>
+<h3><tt>Current Version 6.4.6 (2 December 2016):</tt></h3>
+<ul>
+  <li>Full distribution, with sources:	<a href="spin646.tar.gz">spin646.tar.gz</a> (476k)</li>
+  <li>C Sources only:	<a href="src646.tar.gz">src646.tar.gz</a> (288k)</li>
+  <li>Windows PC executable, iSpin, and documentation, but no sources: <a href="pc_spin646.zip">pc_spin646.zip</a> (832K)</li>
+  <li>GUIs:
+    <ul>
+    <li>ispin Version 1.1.4 (Tcl/Tk GUI for Spin Version 6): <a href="ispin.tcl">ispin.tcl</a>, source (221k)
+      <ul>
+      <li>last updated Nov. 23, 2014</li>
+      </ul>
+    </li>
+    <li>jSpin (Java GUI for Spin, by Moti Ben-Ari: <a href="http://code.google.com/p/jspin/">jSpin</a> with source (625k)</li>
+    </ul>
+</ul>
+<p>
+<hr color=blue>
+<p>
+Other:
+<ul>
+<li>Spin homepage: <a href="http://spinroot.com/spin/">http://spinroot.com/</a></li>
+<li>Spin Precompiled executables: <a href="../Bin/index.html">../Bin/index.html</a></li>
+<li>An alternative LTL to never claim converter: <a href="ltl2ba.tar.gz">ltl2ba.tar.gz</a> (28k)</li>
+<li>Documentation for use of embedded C code: <a href="../Doc/spin4_ch17.pdf">spin4_ch17.pdf</a></li>
+<li>Spin Model extractor from C code: <a href="http://spinroot.com/modex/">modex</a></li>
+<li>Swarm verification front-end to Spin: <a href="http://spinroot.com/swarm/">swarm</a></li>
+<li>Update history:
+	<ul>
+	<li><a href="../Doc/V6.Updates">Version 6 Updates (2010- now)</a></li>
+	<li><a href="../Doc/V5.Updates">Version 5 Updates (2007-2010)</a></li>
+	<li><a href="../Doc/V4.Updates">Version 4 Updates (2003-2007)</a></li>
+	<li><a href="../Doc/V3.Updates">Version 3 Updates (1997-2003)</a></li>
+	<li><a href="../Doc/V2.Updates">Version 2 Updates (1995-1997)</a></li>
+	<li><a href="../Doc/V1.Updates">Version 1 Updates (1991-1995)</a></li>
+	</ul></li>
+</ul>
+<hr color=blue>
+<font size=2>Last updated: 2 December 2016</font>
+</body>
+</html>

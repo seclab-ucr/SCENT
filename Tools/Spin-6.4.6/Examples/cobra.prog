@@ -1,0 +1,123 @@
+{
+new bin;	# binary operator count
+new bop;	# boolean
+new aop;	# arithmetic
+new pm;		# marker
+new none;
+new L1, L2, L3,  L4,  L5,  L6,  L7;	# precedence levels
+new L8, L9, L10, L11, L12, L13;
+if (.txt == "++" || .txt == "--")
+{	aop.mark++;
+. = .prv;
+if (@ident)
+{	. = .nxt;
+label L1;
+} else
+{	label L2;
+. = .nxt;
+}
+Next;
+}
+if (.txt == "~")  { bin.mark++; label L2; Next; }
+if (.txt == "*")  { aop.mark++; label L3; Next; }
+if (.txt == "/")  { aop.mark++; label L3; Next; }
+if (.txt == "%")  { aop.mark++; label L3; Next; }
+if (.txt == "+")  { aop.mark++; label L4; Next; }
+if (.txt == "-")  { aop.mark++; label L4; Next; }
+if (.txt == "<<") { bin.mark++; label L5; Next; }
+if (.txt == ">>") { bin.mark++; label L5; Next; }
+if (.txt == ">")  { bop.mark++; label L6; Next; }
+if (.txt == ">=") { bop.mark++; label L6; Next; }
+if (.txt == "<")  { bop.mark++; label L6; Next; }
+if (.txt == "<=") { bop.mark++; label L6; Next; }
+if (.txt == "==") { bop.mark++; label L7; Next; }
+if (.txt == "!=") { bop.mark++; label L7; Next; }
+if (.txt == "&")  {
+. = .prv;
+if (!@ident)
+{	. = .nxt;
+Next;
+}
+. = .nxt;
+bin.mark++;
+label L8;
+Next;
+}
+if (.txt == "^")  { bin.mark++; label L9; Next; }
+if (.txt == "|")  { bin.mark++; label L10; Next; }
+if (.txt == "&&") { bop.mark++; label L11; Next; }
+if (.txt == "||") { bop.mark++; label L12; Next; }
+if (.txt == "?")  { bop.mark++; label L13; Next; }
+if (.txt == "="	 # L14
+||  .txt == "(")
+{	L1 = none; L2 = none; L3 = none; L4 = none;
+L5 = none; L6 = none; L7 = none; L8 = none;
+L9 = none; L10 = none; L11 = none;
+L12 = none; L13 = none;
+bin.mark = 0;
+aop.mark = 0;
+bop.mark = 0;
+pm.mark  = 0;
+if (.txt == "(")
+{	. = .forw;
+label pm;
+. = .back;
+} else
+{	label pm;
+}
+Next;
+}
+if (pm.lnr == 0)
+{	Next;
+}
+if (.txt == ";"
+||  .txt == ","	 	# L15
+||  . == pm	 	# ")"
+||  .round < pm.round
+||  .curly < pm.curly)
+{
+if ((aop.mark + bop.mark) && bin.mark)
+{	pm.mark = 0;
+# find multiple operators with .round == pm.round and .bracket == 0
+if (L1.round  == pm.round && !L1.bracket && L1.txt != "") { pm.mark++; }
+if (L2.round  == pm.round && !L2.bracket && L2.txt != "") { pm.mark++; }
+if (L3.round  == pm.round && !L3.bracket && L3.txt != "") { pm.mark++; }
+if (L4.round  == pm.round && !L4.bracket && L4.txt != "") { pm.mark++; }
+if (L5.round  == pm.round && !L5.bracket && L5.txt != "") { pm.mark++; }
+if (L6.round  == pm.round && !L6.bracket && L6.txt != "") { pm.mark++; }
+if (L7.round  == pm.round && !L7.bracket && L7.txt != "") { pm.mark++; }
+if (L8.round  == pm.round && !L8.bracket && L8.txt != "") { pm.mark++; }
+if (L9.round  == pm.round && !L9.bracket && L9.txt != "") { pm.mark++; }
+if (L10.round == pm.round && !L10.bracket && L10.txt != "") { pm.mark++; }
+if (L11.round == pm.round && !L11.bracket && L11.txt != "") { pm.mark++; }
+if (L12.round == pm.round && !L12.bracket && L12.txt != "") { pm.mark++; }
+if (L13.round == pm.round && !L13.bracket && L13.txt != "") { pm.mark++; }
+if (pm.mark > 1)
+{	print .fnm ":" .lnr ": '" pm.txt "' precedence high to low: ";
+if (L1.round  == pm.round && !L1.bracket) { print L1.txt " "; }
+if (L2.round  == pm.round && !L2.bracket) { print L2.txt " "; }
+if (L3.round  == pm.round && !L3.bracket) { print L3.txt " "; }
+if (L4.round  == pm.round && !L4.bracket) { print L4.txt " "; }
+if (L5.round  == pm.round && !L5.bracket) { print L5.txt " "; }
+if (L6.round  == pm.round && !L6.bracket) { print L6.txt " "; }
+if (L7.round  == pm.round && !L7.bracket) { print L7.txt " "; }
+if (L8.round  == pm.round && !L8.bracket) { print L8.txt " "; }
+if (L9.round  == pm.round && !L9.bracket) { print L9.txt " "; }
+if (L10.round == pm.round && !L10.bracket) { print L10.txt " "; }
+if (L11.round == pm.round && !L11.bracket) { print L11.txt " "; }
+if (L12.round == pm.round && !L12.bracket) { print L12.txt " "; }
+if (L13.round == pm.round && !L13.bracket) { print L13.txt " "; }
+print " (" pm.mark "," pm.lnr "," .round ",'" .txt "')\n";
+Stop;
+}
+}
+L1  = none; L2  = none; L3  = none; L4 = none;
+L5  = none; L6  = none; L7  = none; L8 = none;
+L9  = none; L10 = none; L11 = none;
+L12 = none; L13 = none;
+bin.mark = 0;
+aop.mark = 0;
+bop.mark = 0;
+pm = none;
+}
+ }

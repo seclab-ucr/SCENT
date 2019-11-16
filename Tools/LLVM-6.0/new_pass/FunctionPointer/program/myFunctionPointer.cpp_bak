@@ -1,0 +1,89 @@
+#include "llvm/Pass.h"
+#include "llvm/IR/Function.h"
+#include "llvm/IR/Module.h"
+#include "llvm/Support/raw_ostream.h"
+#include "llvm/IR/InstrTypes.h"
+ #include "llvm/IR/IRBuilder.h"
+ #include "llvm/IR/DebugLoc.h"
+ #include "llvm/IR/DebugInfoMetadata.h"
+ #include "llvm/IR/DebugInfo.h"
+ #include "llvm/IR/Module.h"
+ #include "llvm/IR/TypeFinder.h"
+ #include "llvm/IR/Type.h"
+ #include "llvm/IR/LegacyPassManager.h"
+ #include "llvm/Transforms/IPO/PassManagerBuilder.h"
+#include<set>
+#include <fstream>
+
+using namespace llvm;
+using namespace std;
+
+namespace {
+    struct myFunctionPointer : public ModulePass {
+        static char ID;
+        bool called = false;
+        set<string>Location;
+        set<string>Called_Function;
+        myFunctionPointer() : ModulePass(ID) {}
+
+        bool runOnModule(Module &M) override {
+		   string function_name;
+		   ifstream inFile("new_callgraph.txt");
+		   while (inFile >> function_name){
+			  Called_Function.insert(function_name);
+		   }
+		   inFile.close();
+            Value * Fun;
+            Instruction *II;
+            for (auto &F : M){
+                //if (Called_Function.count(F.getName())==0)
+                //    continue;
+                //called = false;
+                for (auto &BB: F)
+                    for (auto &I: BB){
+                        /*
+                        if (called == false){
+                            const DILocation *Loc2 = I.getDebugLoc();
+                            if (Loc2){
+                                StringRef File = Loc2->getFilename();
+                                outs() << "File:" << File << "\t" << F.getName() << "\n";
+                                called = true;
+                            }
+                        }
+                        */
+                        /*
+                        if (CallInst *CI = dyn_cast<CallInst>(&I)){
+                            errs() << "Instruction: " << I << "\n";
+                            Function * FF = CI->getCalledFunction();
+                            errs() << FF->getName() << "\n";
+                        }
+                        */
+                        if (LoadInst *LI = dyn_cast<LoadInst>(&I)){
+                            Type * TT = LI->getType();
+                            if (TT->isPointerTy()){
+                                //getPointerElementType();
+                                if (TT->getPointerElementType()->isFunctionTy()){
+                                    //errs() << "Function Pointer: " << I << "\n";
+                                    const DILocation *Loc = I.getDebugLoc();
+                                    if (Loc){
+                                       unsigned Line0 = Loc->getLine();
+                                       StringRef File = Loc->getFilename();
+                                       //StringRef Dir = Loc.getDirectory();
+                                       string temp = to_string(Line0)+":"+(string)File;
+                                       Location.insert(temp);
+                                       //errs() << "Source Code Line:" << Line0 << " File:" << File <<"\n";
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            for (set<string>::iterator Lit = Location.begin(); Lit != Location.end(); Lit++)
+                errs() << *Lit << "\n";
+            return false;
+        }
+    };
+}
+
+char myFunctionPointer::ID = 0;
+static RegisterPass<myFunctionPointer> X("myfunctionpointer", "Hello World Pass", false, false);
